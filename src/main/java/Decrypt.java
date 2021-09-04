@@ -12,4 +12,5 @@ public class Decrypt {
     public int getKey(){
         return key;
     }
+
 }
