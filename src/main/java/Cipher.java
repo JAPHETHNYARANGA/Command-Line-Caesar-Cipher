@@ -1,8 +1,9 @@
-public class Encrypt {
-    private int key;
+public class Cipher {
     private String text;
+    private int key;
 
-    public Encrypt( int key, String text){
+
+    public Cipher(int key, String text){
         this.key = key;
         this.text = text;
     }
@@ -13,7 +14,7 @@ public class Encrypt {
         return key;
     }
 
-    public String encryption(){
+    public String encrypt(){
         StringBuilder encryption = new StringBuilder();
         for (int i = 0; i < text.length(); i++) {
             if (Character.isUpperCase(this.text.charAt(i))) {
@@ -28,3 +29,6 @@ public class Encrypt {
     }
 
 }
+
+
+
