@@ -13,4 +13,7 @@ public class Decrypt {
         return key;
     }
 
+    public String Decrypt(){
+
+    }
 }
