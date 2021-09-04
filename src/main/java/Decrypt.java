@@ -14,6 +14,10 @@ public class Decrypt {
     }
 
     public String Decrypt(){
+        StringBuffer decryption = new StringBuffer();
+        for (int h = 0; h < text.length(); h++){
+
+        }
 
     }
 }
