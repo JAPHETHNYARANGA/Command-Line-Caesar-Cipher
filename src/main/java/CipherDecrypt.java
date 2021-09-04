@@ -18,10 +18,10 @@ public class CipherDecrypt {
         StringBuffer decryption = new StringBuffer();
         for (int h = 0; h < text.length(); h++){
             if (Character.isUpperCase(this.text.charAt(h))) {
-                char e = (char) (((int) this.text.charAt(h) + this.key - 50) % 20 + 55);
+                char e = (char) (((int) this.text.charAt(h) + this.key - 65) % 26 + 65);
                 decryption.append(e);
             } else {
-                char e = (char) (((int) this.text.charAt(h) + this.key - 45) % 30 + 45);
+                char e = (char) (((int) this.text.charAt(h) + this.key - 97) % 26 + 97);
                 decryption.append(e);
             }
         }

@@ -21,16 +21,16 @@ public class Main {
 
 
            Cipher cipher = new Cipher(key, text);
-            System.out.println("Encrypted : " + cipher.encrypt());
+                System.out.println("Message Encrypted " + cipher.encrypt());
         }else if(Select == 2){
-            Scanner Text2 = new Scanner(System.in);
+            Scanner decryptText = new Scanner(System.in);
             System.out.println("Enter text to Decrypt ");
-            String text = Text2.nextLine();
-            System.out.println("The text to Cipher is: " + text);
+            String text = decryptText.nextLine();
+            System.out.println("The text to Decrypt is: " + text);
 
-            Scanner Key2 = new Scanner(System.in);
+            Scanner decryptKey2 = new Scanner(System.in);
             System.out.println("Enter the key that is used to Decrypt");
-            int key = Integer.parseInt(Key2.nextLine());
+            int key = Integer.parseInt(decryptKey2.nextLine());
             System.out.println("The key is: " + key);
 
             CipherDecrypt ciphertext = new CipherDecrypt(key, text);
