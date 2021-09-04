@@ -6,4 +6,10 @@ public class Decrypt {
         this.key = key;
         this.text = text;
     }
+    public String getInput(){
+        return text;
+    }
+    public int getKey(){
+        return key;
+    }
 }
