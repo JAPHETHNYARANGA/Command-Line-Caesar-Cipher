@@ -1,9 +1,9 @@
-public class Cipher {
+public class Encrypt {
     private String text;
     private int key;
 
 
-    public Cipher(int key, String text){
+    public Encrypt(int key, String text){
         this.key = key;
         this.text = text;
     }
@@ -27,8 +27,4 @@ public class Cipher {
         }
         return encryption.toString();
     }
-
 }
-
-
-

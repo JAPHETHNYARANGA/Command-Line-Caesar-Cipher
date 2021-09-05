@@ -1,9 +1,9 @@
-public class CipherDecrypt {
+public class Decrypt {
     private String text;
     private int key;
 
 
-    public CipherDecrypt(int key, String text){
+    public Decrypt(int key, String text){
         this.key = key;
         this.text = text;
     }
@@ -31,4 +31,3 @@ public class CipherDecrypt {
 
     }
 }
-

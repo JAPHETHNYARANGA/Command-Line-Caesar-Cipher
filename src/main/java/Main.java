@@ -20,8 +20,8 @@ public class Main {
             System.out.println("your inputted key is :" + key);
 
 
-           Cipher cipher = new Cipher(key, text);
-                System.out.println("Message Encrypted " + cipher.encrypt());
+           Encrypt encrypt = new Encrypt(key, text);
+                System.out.println("Message Encrypted " + encrypt.encrypt());
         }else if(Select == 2){
             Scanner decryptText = new Scanner(System.in);
             System.out.println("Enter text to Decrypt ");
@@ -33,7 +33,7 @@ public class Main {
             int key = Integer.parseInt(decryptKey2.nextLine());
             System.out.println("The key is: " + key);
 
-            CipherDecrypt ciphertext = new CipherDecrypt(key, text);
+            Decrypt ciphertext = new Decrypt(key, text);
             System.out.println("The decrypted text is: " + ciphertext.Decrypt());
 
         }else if(Select == 3){
